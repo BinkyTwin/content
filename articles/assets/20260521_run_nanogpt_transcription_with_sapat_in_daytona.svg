@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">NanoGPT transcription workflow in Daytona</title>
+  <desc id="desc">A diagram showing Daytona workspace setup, Sapat conversion, NanoGPT transcription, and transcript review.</desc>
+  <rect width="1280" height="720" fill="#f6f8fb"/>
+  <rect x="88" y="86" width="1104" height="548" rx="24" fill="#ffffff" stroke="#d8dee8" stroke-width="3"/>
+  <text x="132" y="150" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#132033">Sapat + NanoGPT in a Daytona Workspace</text>
+  <text x="132" y="190" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#4e5b6f">A reproducible path from video input to review-ready transcript without committing API keys.</text>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <rect x="132" y="260" width="220" height="150" rx="16" fill="#e9f2ff" stroke="#76a9fa" stroke-width="2"/>
+    <text x="162" y="318" font-size="24" font-weight="700" fill="#153a6f">Daytona</text>
+    <text x="162" y="352" font-size="18" fill="#31445f">create workspace</text>
+    <text x="162" y="382" font-size="18" fill="#31445f">set env secrets</text>
+    <rect x="420" y="260" width="220" height="150" rx="16" fill="#eaf8ee" stroke="#68bf7b" stroke-width="2"/>
+    <text x="450" y="318" font-size="24" font-weight="700" fill="#1b5b2b">Sapat CLI</text>
+    <text x="450" y="352" font-size="18" fill="#2f5138">convert to MP3</text>
+    <text x="450" y="382" font-size="18" fill="#2f5138">route --api nanogpt</text>
+    <rect x="708" y="260" width="220" height="150" rx="16" fill="#fff5df" stroke="#f2b84b" stroke-width="2"/>
+    <text x="738" y="318" font-size="24" font-weight="700" fill="#734b00">NanoGPT</text>
+    <text x="738" y="352" font-size="18" fill="#604b24">STT endpoint</text>
+    <text x="738" y="382" font-size="18" fill="#604b24">OpenAI-compatible</text>
+    <rect x="996" y="260" width="156" height="150" rx="16" fill="#f1eaff" stroke="#9a7bea" stroke-width="2"/>
+    <text x="1022" y="318" font-size="24" font-weight="700" fill="#46317e">Review</text>
+    <text x="1022" y="352" font-size="18" fill="#4d3f70">check text</text>
+    <text x="1022" y="382" font-size="18" fill="#4d3f70">save .txt</text>
+    <path d="M360 335 L408 335" stroke="#6b778c" stroke-width="5" stroke-linecap="round"/>
+    <path d="M400 323 L416 335 L400 347" fill="none" stroke="#6b778c" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M648 335 L696 335" stroke="#6b778c" stroke-width="5" stroke-linecap="round"/>
+    <path d="M688 323 L704 335 L688 347" fill="none" stroke="#6b778c" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M936 335 L984 335" stroke="#6b778c" stroke-width="5" stroke-linecap="round"/>
+    <path d="M976 323 L992 335 L976 347" fill="none" stroke="#6b778c" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="132" y="480" width="1020" height="74" rx="14" fill="#132033"/>
+    <text x="160" y="526" font-size="22" fill="#ffffff">sapat demo.mp4 --api nanogpt --quality M --language en</text>
+  </g>
+</svg>
